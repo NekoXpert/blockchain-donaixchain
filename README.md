@@ -116,5 +116,4 @@ Hardhat
 Sepolia Faucet
 
 yaml
-Copiar
-Editar
+
