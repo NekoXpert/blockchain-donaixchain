@@ -23,17 +23,8 @@ Este repositorio contiene:
 
 ## 📁 Estructura de carpetas
 
-donaxchain/
-├── contracts/
-│ ├── NekoinsToken.sol # Token ERC20 con quema 0.5%
-│ └── DonaxBadgeNFT.sol # NFT con URI personalizada
-├── scripts/
-│ └── deploy.js # Script opcional para Hardhat
-├── test/
-│ └── nekoins.test.js # Pruebas unitarias (opcional)
-├── hardhat.config.js # Configuración de Hardhat
-└── README.md # Este archivo
 
+![Estructura DonaxChain](./donaxchain_structure.png)
 
 ---
 
