@@ -35,7 +35,7 @@ Antes de comenzar, asegúrate de tener instalado:
 - Node.js `>=16.x`
 - Hardhat `^2.x`
 - MetaMask (configurada con la testnet Sepolia)
-- Cuenta en [Alchemy](https://alchemy.com/) o [Infura](https://infura.io/) para RPC
+- Cuenta para RPC
 
 ---
 
