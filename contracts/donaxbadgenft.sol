@@ -5,14 +5,19 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract DonaxBadgeNFT is ERC721URIStorage, Ownable {
-    uint256 public nextTokenId;
+    uint256 private _tokenIds;
 
-    constructor() ERC721("DonaxBadge", "DBADGE") {}
+    constructor() ERC721("DonaxBadge", "DBADGE") Ownable(msg.sender) {}
 
-    function mintBadge(address recipient, string memory tokenURI) external onlyOwner {
-        uint256 tokenId = nextTokenId;
-        _mint(recipient, tokenId);
-        _setTokenURI(tokenId, tokenURI);
-        nextTokenId++;
+    function mintBadge(address recipient, string memory metadataURI) 
+        public 
+        onlyOwner 
+        returns (uint256) 
+    {
+        _tokenIds++;
+        uint256 newItemId = _tokenIds;
+        _mint(recipient, newItemId);
+        _setTokenURI(newItemId, metadataURI);
+        return newItemId;
     }
 }
