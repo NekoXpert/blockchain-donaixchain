@@ -1,0 +1,400 @@
+body, html, #root, .app-bg {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: linear-gradient(135deg, #181848 60%, #4b2fae 100%);
+  color: #fff;
+}
+
+.app-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: flex-start;
+}
+
+.improved-navbar {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  background: rgba(24, 24, 72, 0.95);
+  padding: 0.7rem 1.5rem;
+  border-radius: 1.5rem;
+  margin: 2rem 0 1.5rem 0;
+  box-shadow: 0 4px 24px #0002;
+  position: sticky;
+  top: 1.5rem;
+  z-index: 10;
+}
+.improved-navbar a {
+  color: #ffe066;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.08rem;
+  padding: 0.3rem 0.9rem;
+  border-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+.improved-navbar a.active, .improved-navbar a:hover {
+  background: #4b2fae;
+  color: #fff;
+  box-shadow: 0 2px 8px #0002;
+}
+
+.improved-main-content {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+.improved-dashboard {
+  background: rgba(45, 35, 99, 0.98);
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px #0003;
+  min-width: 320px;
+  max-width: 430px;
+  margin: 0 auto 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dashboard-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.logo-big {
+  width: 90px;
+  margin-bottom: 0.7rem;
+}
+.improved-saldo {
+  background: #4b2fae;
+  border-radius: 1.2rem;
+  padding: 1.2rem 1rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  box-shadow: 0 2px 8px #0002;
+}
+.saldo-valor {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  letter-spacing: 1px;
+}
+.transacciones {
+  margin-bottom: 1.2rem;
+  width: 100%;
+}
+.transacciones ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.7rem 0;
+}
+.transacciones li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+  font-size: 1.08rem;
+}
+.recibido {
+  color: #4fff8f;
+  font-weight: bold;
+}
+.enviado {
+  color: #d6a4ff;
+  font-weight: bold;
+}
+.acciones {
+  display: flex;
+  gap: 1rem;
+}
+.acciones button {
+  flex: 1;
+  background: #ffe066;
+  color: #2d2363;
+  border: none;
+  border-radius: 0.7rem;
+  padding: 0.9rem 0;
+  font-weight: bold;
+  font-size: 1.08rem;
+  cursor: pointer;
+  margin-bottom: 0;
+  box-shadow: 0 2px 8px #0002;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+.acciones button:hover {
+  background: #fff;
+  color: #4b2fae;
+}
+.improved-market {
+  background: #4b2fae;
+  border-radius: 1.2rem;
+  padding: 1.2rem 1rem;
+  margin-bottom: 1.2rem;
+  width: 100%;
+  box-shadow: 0 2px 8px #0002;
+}
+.market-chart {
+  background: #fff2;
+  border-radius: 0.7rem;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffe066;
+  font-size: 1rem;
+}
+.improved-notificaciones {
+  background: #3e2e7e;
+  border-radius: 1.2rem;
+  padding: 1.2rem 1rem;
+  width: 100%;
+  box-shadow: 0 2px 8px #0002;
+}
+.improved-notificaciones ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.improved-notificaciones li {
+  margin-bottom: 0.5rem;
+  font-size: 1.08rem;
+  color: #ffe066;
+}
+.market-items {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.market-item {
+  background: #4b2fae;
+  border-radius: 1rem;
+  padding: 1rem;
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  box-shadow: 0 2px 8px #0002;
+}
+.market-item button {
+  margin-top: 0.7rem;
+  background: #ffe066;
+  color: #2d2363;
+  border: none;
+  border-radius: 0.7rem;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 8px #0002;
+}
+.staking-box {
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.staking-box input {
+  flex: 2;
+  padding: 0.7rem 1rem;
+  border-radius: 0.7rem;
+  border: none;
+  font-size: 1rem;
+}
+.staking-box button {
+  flex: 1;
+  background: #ffe066;
+  color: #2d2363;
+  border: none;
+  border-radius: 0.7rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 8px #0002;
+}
+.staking-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.governance-box {
+  background: #4b2fae;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  box-shadow: 0 2px 8px #0002;
+}
+.governance-box button {
+  margin: 0.5rem 0.5rem 0 0;
+  background: #ffe066;
+  color: #2d2363;
+  border: none;
+  border-radius: 0.7rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 8px #0002;
+}
+.governance-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+.history-list .badge {
+  background: #ffe066;
+  color: #2d2363;
+  border-radius: 0.7rem;
+  padding: 0.2rem 0.7rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+.profile-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+.input-search {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.7rem;
+  border: none;
+  font-size: 1rem;
+}
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+.contact-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.contact-list button {
+  background: #ffe066;
+  color: #2d2363;
+  border: none;
+  border-radius: 0.7rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 8px #0002;
+}
+.desc {
+  color: #ffe066;
+  font-size: 0.98rem;
+  margin-top: 0.7rem;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .improved-main-content, .improved-dashboard {
+    max-width: 99vw;
+    min-width: 0;
+    padding: 1.2rem 0.3rem 1.2rem 0.3rem;
+    border-radius: 1.2rem;
+  }
+  .improved-navbar {
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    padding: 0.4rem 0.1rem;
+    font-size: 0.97rem;
+    border-radius: 1rem;
+    top: 0.5rem;
+  }
+  .market-items {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .acciones {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .staking-box {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .improved-main-content, .improved-dashboard {
+    padding: 0.7rem 0.1rem 0.7rem 0.1rem;
+    border-radius: 0.7rem;
+  }
+  .improved-navbar {
+    font-size: 0.93rem;
+    border-radius: 0.7rem;
+    margin: 1rem 0 1rem 0;
+  }
+  .dashboard-header h2, .dashboard-header {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+  }
+  .saldo-valor {
+    font-size: 1.5rem;
+  }
+  .market-item, .improved-market, .improved-notificaciones, .staking-box, .governance-box {
+    padding: 0.7rem 0.5rem;
+    border-radius: 0.7rem;
+  }
+  .acciones button, .market-item button, .staking-box button, .governance-box button, .contact-list button {
+    font-size: 0.98rem;
+    padding: 0.6rem 0.5rem;
+    border-radius: 0.5rem;
+  }
+  .input-search {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+  }
+}
+
+/* Mejoras visuales generales */
+.improved-dashboard, .improved-main-content {
+  box-shadow: 0 8px 32px #0004, 0 1.5px 8px #0002;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+.improved-dashboard:hover, .improved-main-content:hover {
+  box-shadow: 0 12px 40px #0005, 0 2px 12px #0003;
+}
+.improved-navbar a {
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+.improved-navbar a:active {
+  transform: scale(0.97);
+}
+.acciones button, .market-item button, .staking-box button, .governance-box button, .contact-list button {
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+.acciones button:active, .market-item button:active, .staking-box button:active, .governance-box button:active, .contact-list button:active {
+  transform: scale(0.97);
+}
+/* Mejorar listas y formularios */
+ul, ol {
+  padding-left: 1.1em;
+}
+input, button {
+  outline: none;
+}

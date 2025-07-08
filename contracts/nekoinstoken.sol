@@ -23,17 +23,20 @@ contract NekoinsToken is ERC20, Ownable {
         lastEmissionTime = block.timestamp;
     }
 
-    // Sobreescribe la función de transferencia para implementar el mecanismo de quema
-    function _transfer(address from, address to, uint256 amount) internal override {
-        // Calcula la cantidad a quemar y la cantidad a enviar
-        uint256 burnAmount = (amount * burnRate) / 1000;
-        uint256 sendAmount = amount - burnAmount;
-        
-        // Quema una parte de los tokens
-        _burn(from, burnAmount);
-        
-        // Transfiere el resto al destinatario
-        super._transfer(from, to, sendAmount);
+    // Sobreescribe la función de actualización para implementar el mecanismo de quema
+    function _update(address from, address to, uint256 amount) internal override {
+        // Si es una transferencia (no mint ni burn)
+        if (from != address(0) && to != address(0)) {
+            uint256 burnAmount = (amount * burnRate) / 1000;
+            uint256 sendAmount = amount - burnAmount;
+            // Quema una parte de los tokens
+            super._update(from, address(0), burnAmount);
+            // Transfiere el resto al destinatario
+            super._update(from, to, sendAmount);
+        } else {
+            // Mint o burn normal
+            super._update(from, to, amount);
+        }
     }
 
     // Función para emitir tokens anuales, solo puede ser llamada por el owner
