@@ -1,4 +1,28 @@
-# 🐱💠 DonaxChain – Proyecto Blockchain Solidario
+# 🐱💠 DonaxChain – Proyecto Blockchain
+
+🐱💠 DonaxChain Smart Contracts
+Bienvenido al repositorio oficial de los Smart Contracts del ecosistema DonaxChain, una plataforma blockchain orientada a la trazabilidad de donaciones solidarias, utilizando el token $NEKOINS y NFTs conmemorativos DonaxBadges.
+
+📦 Contenido del Proyecto
+Este repositorio contiene:
+
+-🪙 NekoinsToken.sol – Token ERC20 con quema automática y emisión controlada.
+-🎖 DonaxBadgeNFT.sol – NFT ERC721 que reconoce logros solidarios.
+-🧪 Scripts para despliegue y pruebas.
+-📄 Instrucciones detalladas para compilar y desplegar en testnet (Sepolia).
+-🧠 ¿Qué es DonaxChain?
+Una plataforma descentralizada donde donar tiene recompensa real. Cada acción solidaria se registra en blockchain, emitiendo tokens y NFTs que fomentan una comunidad activa y transparente.
+
+📁 Estructura de carpetas
+Estructura DonaxChain
+
+🔧 Requisitos
+Antes de comenzar, asegúrate de tener instalado:
+
+Node.js >=16.x
+Hardhat ^2.x
+MetaMask (configurada con la testnet Sepolia)
+Cuenta para RPC
 
 ## 10. Documentación de los componentes tecnológicos
 
