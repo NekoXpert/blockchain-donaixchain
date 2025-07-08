@@ -303,24 +303,6 @@ npx hardhat test --grep "Should only allow owner to mint"
 - Incluye aquí tus pantallazos de la consola mostrando las direcciones y la verificación en Etherscan.
 - El frontend está disponible en: [http://localhost:3001](http://localhost:3001) (o el puerto que indique la consola).
 
----
-
-## Cumplimiento de la rúbrica de sobresaliente
-
-### Desarrollo de un prototipo funcional
-- El prototipo es completamente funcional, probado y listo para producción en testnet y frontend.
-
-### Uso de los componentes de programación
-- Se argumenta y documenta el uso de cada componente tecnológico, justificando su elección y función en el sistema.
-
-### Dominio de los conceptos adquiridos sobre blockchain
-- Se explica y demuestra el uso de la blockchain para trazabilidad, incentivos y transparencia, con ejemplos claros en los tests y la lógica de los contratos.
-
-### Componentes necesarios para las conexiones con la blockchain
-- Se detalla la conexión de los scripts, el uso de variables de entorno y la integración con la testnet Sepolia, mostrando dominio técnico y buenas prácticas.
-
-### Gestión de información
-- La documentación es clara, estructurada y acorde a los estándares de calidad, seguridad y netiqueta del sector tecnológico.
 
 ---
 
