@@ -44,6 +44,7 @@ Cuenta para RPC
 - MetaMask facilita la interacción y validación manual.
 - El frontend en React permite una experiencia de usuario moderna y profesional.
 - El repositorio en GitHub centraliza el código y la documentación.
+![Estructura del proyecto DonaxChain](./donaxchain_structure.png)
 
 ---
 
