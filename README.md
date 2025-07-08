@@ -14,8 +14,7 @@ Este repositorio contiene:
 Una plataforma descentralizada donde donar tiene recompensa real. Cada acción solidaria se registra en blockchain, emitiendo tokens y NFTs que fomentan una comunidad activa y transparente.
 
 📁 Estructura de carpetas
-Estructura DonaxChain
-
+Estructura DonaxChain![Estructura del proyecto DonaxChain](./donaxchain_structure.png)
 🔧 Requisitos
 Antes de comenzar, asegúrate de tener instalado:
 
@@ -44,7 +43,7 @@ Cuenta para RPC
 - MetaMask facilita la interacción y validación manual.
 - El frontend en React permite una experiencia de usuario moderna y profesional.
 - El repositorio en GitHub centraliza el código y la documentación.
-![Estructura del proyecto DonaxChain](./donaxchain_structure.png)
+
 
 ---
 
